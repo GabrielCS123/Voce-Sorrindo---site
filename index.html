@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Você Sorrindo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style_principal.css">
+    <script defer src="scripts.js"></script>
 </head>
 
 <body>
 
-    <header class="">
-        <section id="logo" class="">LOGO</section>
-        <section id="menu" class=""></section>
+    <header>
+        <section id="logo" class=""><img src="imagems/logo.png" alt="Logo principal"></section>
+        <section id="botao_menu">
+            <img class="botao_menu_apertar" src="imagems/cardápio.png" alt="Botão menu">
+        </section>
     </header>
+
+    <div id="menu_aberto">
+        <section id="botao_menu_aberto">
+            <img class="botao_menu_aberto_apertar" src="imagems/x.png" alt="Botão menu">
+        </section>
+        <section id="menu" class="">
+            <a href="">Sobre nós</a>
+            <a href="">Nossa unidade</a>
+            <a href="">Contato</a>
+        </section>
+    </div>
 
     <main class="">
 
         <section id="principal" class="">
-            <h1>TITULO CLINICA VC SORRISO</h1>
-            <p>Uma clínica é um espaço dedicado à saúde</p>
-            <a href="#">Agende o seu exame</a>
+            <div id="principal_conteudo">
+                <h1>Você Sorrindo</h1>
+                <h2>CLINICA ODONTOLÓGICA</h2>
+                <p>SUA <strong>SAÚDE BUCAL</strong> É NOSSA MAIOR <strong> PRIORIDADE!</strong></p>
+                <a id="botao_agende" href="#">Agende Uma avaliação</a>
+            </div>
         </section>
 
         <section id="detalhes" class="">
@@ -116,7 +133,8 @@
         </section>
 
         <section id="unidade" class="">
-
+            <h2>Nosso local</h2>
+            <p>Av. Brasil, 517 - Nova Brasília, Ji-Paraná - RO, 76908-408</p>
         </section>
 
         <section id="sobre" class="">
@@ -132,19 +150,19 @@
 
     <footer class="">
 
-        <div>LOGO</div>
-        <div>
+        <section id="logo" class=""><img src="imagems/logo.png" alt="Logo principal"></section>
+        <section>
             <h2>Endereço</h2>
             <p></p>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>contato</h2>
             <a href="">99 9999-9999</a>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>Redes sociais</h2>
             Logos
-        </div>
+        </section>
 
     </footer>
 
