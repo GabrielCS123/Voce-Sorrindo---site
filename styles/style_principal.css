@@ -44,30 +44,86 @@ header {
 }
 
 #menu_aberto {
-    justify-content: center;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1000;
 }
 
 #menu {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 6em;
+    margin-top: 10em;
 }
 
 #menu a {
     margin-top: 2em;
     text-decoration: none;
     font-size: 2em;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#menu a:hover {
+    color: yellow;
 }
 
 #botao_menu_aberto {
     position: absolute;
     right: 0;
-    margin: 2.8em 2em;
+    margin: 2.8em 2.85em;
 }
 
 #botao_menu_aberto img {
     height: 35px;
+}
+
+/* Estilo do botão de menu */
+#botao_menu {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#botao_menu:hover {
+    transform: scale(1.1);
+}
+
+#botao_menu:active {
+    transform: scale(0.9);
+}
+
+/* Estilo do botão de menu ABERTO */
+#botao_menu_aberto {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#botao_menu_aberto:hover {
+    transform: scale(1.1);
+}
+
+#botao_menu_aberto:active {
+    transform: scale(0.9);
+}
+
+#menu_aberto.menu-aberto {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#botao_menu_aberto {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu_aberto.menu-aberto a {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /*PRINCIPAL*/
