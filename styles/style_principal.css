@@ -18,6 +18,7 @@ header {
     background-color: var(--amarelo2);
     justify-content: space-between;
     padding: 0 1.5em;
+    align-items: center;
 }
 
 #botao_menu {
@@ -35,6 +36,17 @@ header {
 
 #menu_aberto {
     display: none;
+}
+
+#menu_maior {
+    display: none;
+}
+
+#menu_maior a {
+    text-decoration: none;
+    color: white;
+    padding-left: .5em;
+    font-size: 1.5em;
 }
 
 /* menu ativo */

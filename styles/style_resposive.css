@@ -1,0 +1,45 @@
+@media screen and (min-width: 720px) {
+
+    header {
+        padding: 1em 5em;
+    }
+
+    #detalhes, #servicos, #unidade, #sobre, footer {
+        padding: 3em 5em;
+    }
+
+    #menu_maior {
+        display: block;
+    }
+
+    #botao_menu {
+        display: none;
+    }
+
+    #principal {
+        padding: 10em 1.5em;
+        background-attachment: fixed; 
+    }
+
+    #principal_conteudo {
+        padding: 0 5em;
+    }
+
+    #principal_conteudo h1 {
+        font-size: 5em;
+    }
+    
+    #principal_conteudo h2 {
+        font-size: 3em;
+    }
+
+    
+    #principal_conteudo p {
+        font-size: 2em;
+    }
+
+    #botao_agende {
+        font-size: 3em; 
+    }
+
+}
