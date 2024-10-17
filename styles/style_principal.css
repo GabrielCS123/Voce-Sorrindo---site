@@ -62,13 +62,15 @@ header {
 #menu a {
     margin-top: 2em;
     text-decoration: none;
+    color: #2b2a29;
     font-size: 2em;
+    font-weight: 500;
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 #menu a:hover {
-    color: yellow;
+    color: rgb(194, 160, 7);
 }
 
 #botao_menu_aberto {
