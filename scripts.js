@@ -1,3 +1,5 @@
+// BOTÃO MENU
+
 const botaoMenu = document.querySelector('.botao_menu_apertar');
 const botaoMenuAberto = document.querySelector('.botao_menu_aberto_apertar');
 const menu = document.getElementById('menu_aberto');

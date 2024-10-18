@@ -7,11 +7,12 @@
     <title>Contato</title>
     <link rel="stylesheet" href="/styles/style_principal.css">
     <link rel="stylesheet" href="/styles/style_resposive.css">
+    <link rel="stylesheet" href="/styles/style_contato.css">
     <script defer src="/scripts.js"></script>
 </head>
 
 <body>
-    
+
     <header>
         <section id="logo" class="">
             <a href="/index.html">
@@ -39,6 +40,49 @@
         </section>
     </div>
 
+    <main>
+        <form id="formulario">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="contato">Contato:</label><br>
+            <input type="text" id="contato" name="contato" required><br><br>
+
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="message"></div> <!-- Para exibir mensagens de sucesso ou erro -->
+    </main>
+
+    <script>
+        // JavaScript para enviar o formulário
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const formData = new FormData(this); // Coleta os dados do formulário
+
+            fetch('https://script.google.com/macros/s/AKfycbyXVbevG1XQ0_RqQ0t-mdVw0UGa2njqrnxoaGR_NHOOJj0tqLUoAyEu3ICCP6oJ_Zw/exec', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Exibe uma mensagem de sucesso se os dados forem enviados com sucesso
+                    if (data.success) {
+                        document.getElementById('message').innerText = 'Dados enviados com sucesso!';
+                        this.reset(); // Limpa o formulário
+                    } else {
+                        document.getElementById('message').innerText = 'Erro ao enviar os dados: ' + data.error;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    document.getElementById('message').innerText = 'Erro ao enviar os dados: ' + error.message;
+                });
+        });
+    </script>
 
 </body>
 
