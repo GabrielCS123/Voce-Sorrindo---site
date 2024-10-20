@@ -1,0 +1,24 @@
+#sessao_mapa {
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 2em;
+}
+
+h2 {
+    padding: 1em .5em 2em .5em;
+}
+
+#container_detalhes {
+    text-align: center;
+}
+
+#container_mapa {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+}
+
+#container_mapa iframe {
+    border-radius: 1em;
+}
