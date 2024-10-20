@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="/styles/style_principal.css">
-    <link rel="stylesheet" href="/styles/style_resposive.css">
+    <link rel="stylesheet" href="/styles/style_responsive.css">
     <link rel="stylesheet" href="/styles/style_contato.css">
     <script defer src="/scripts.js"></script>
 </head>
@@ -40,20 +40,52 @@
         </section>
     </div>
 
-    <main>        
-        <form id="formulario" action="https://script.google.com/macros/s/AKfycbyveXr7msWingaWLxYzVr4fF178nZzrgjjaPXlgPKqbw3vYrQE2GFEG0VsWeH4LdyE/exec" method="post">
+    <main>
+        <h2>Entraremos em contato através das informções desse formulário</h2>
+        <form id="formulario" onsubmit="handleSubmit(event)">
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
     
             <label for="contato">Contato:</label><br>
-            <input type="text" id="contato" name="contato" required><br><br>
+            <input type="text" id="contato" name="contato" placeholder="Contato" required><br><br>
     
             <label for="descricao">Descrição:</label><br>
-            <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Fale sobre o seu problema"></textarea><br><br>
     
             <input type="submit" value="Enviar">
         </form>
+        <div id="mensagem" style="display: none;"></div>
     </main>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+    
+            const formData = new FormData(document.getElementById('formulario'));
+    
+            fetch('https://script.google.com/macros/s/AKfycbyveXr7msWingaWLxYzVr4fF178nZzrgjjaPXlgPKqbw3vYrQE2GFEG0VsWeH4LdyE/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('mensagem').innerText = 'Sua resposta foi enviada!';
+                    document.getElementById('mensagem').style.display = 'block';
+
+                    document.getElementById('formulario').reset();
+                } else {
+ 
+                    document.getElementById('mensagem').innerText = 'Erro ao enviar o formulário.';
+                    document.getElementById('mensagem').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                document.getElementById('mensagem').innerText = 'Erro ao enviar o formulário.';
+                document.getElementById('mensagem').style.display = 'block';
+            });
+        }
+    </script>
+    
 
 </body>
 
