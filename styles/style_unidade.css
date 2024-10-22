@@ -1,3 +1,7 @@
+main {
+    margin: 1em;
+}
+
 #sessao_mapa {
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

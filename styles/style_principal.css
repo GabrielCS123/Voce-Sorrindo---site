@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --amarelo1: #e8b827;
     --amarelo2: #e0a905;
@@ -13,7 +15,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+      font-family: "Rubik", sans-serif;
 }
 
 /*CABECALHO*/
@@ -225,45 +227,154 @@ strong {
     transition: all 0.2s ease;
 }
 
+
+/*SOBRE*/
+
+#sobre {
+    padding: 3em 1.5em 6em 1.5em;
+    background: linear-gradient(180deg, var(--amarelo1), #e8b8278f, #fff);
+}
+
+#sobre h2 {
+
+}
+
+#sobre h3 {
+    margin: .3em 0;
+    font-size: 1.5em;
+}
+
+#sobre p {
+    margin: 1.5em 0;
+    font-weight: 500;
+}
+
+#sobre a {
+    
+}
+
 /*DETALHES*/
 
 #detalhes {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    padding: 3em 1.5em;
+    padding: 0em 1.5em 3em 1.5em;
     background-color: white;
 }
 
 #detalhe {
 }
 
+#detalhe p {
+    margin: 1em 0;
+    font-weight: 500;
+}
+
 #detalhe h2 {
-    margin-bottom: .5em;
+    margin-bottom: .6em;
 }
 
 /*SERVICOS*/
 
 #servicos {
     background-color: var(--amarelo1);
-    padding: 1.5em;
+    padding: 3em 1.5em; 
 }
 
-/*SOBRE*/
+#servicos h2 {
+    margin-bottom: 1em;
+}
 
-#sobre {
-    padding: 1.5em;
+#servicos_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 1em;
 }
 
 /*UNIDADE*/
 
 #unidade {
-    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em 1.5em;
+}
+
+#saiba_mais {
+    display: inline-block;
+    background-color: #ffb700;
+    padding: 1em .8em;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+#saiba_mais:hover {
+    background-color: #ffd24b;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
 }
 
 /*RODAPE*/
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--cinza);
-    padding: 1.5em;
+    padding: 3em 1.5em 3em 1.5em;
+}
+
+footer #logo {
+    padding-bottom: 2em;
+}
+
+#rodape_menu {
+    padding-bottom: 2em;
+}
+
+#rodape_menu h2 {
+    margin-bottom: .2em;
+}
+
+#rodape_items_menu {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    gap: .5em;
+}
+
+#rodape_items_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#rodape_contato {
+    padding-bottom: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#rodape_contato h2 {
+    margin-bottom: .2em;
+}
+
+#rodape_contato a {
+    text-decoration: none;
+    color: black;
+}
+
+#rodape_redes {
+
+}
+
+#rodape_redes h2 {
+    margin-bottom: .2em;
+}
+
+#rodape_redes img {
+    width: 35px;
 }
