@@ -22,7 +22,6 @@ function fecharMenu() {
     }, 100);
 }
 
-
 botaoMenu.onclick = function () {
     abrirMenu()
 }

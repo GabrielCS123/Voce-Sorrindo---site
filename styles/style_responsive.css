@@ -8,7 +8,11 @@
         height: 70px;
     }
 
-    #detalhes, #servicos, #unidade, #sobre, footer {
+    #detalhes,
+    #servicos,
+    #unidade,
+    #sobre,
+    footer {
         padding: 3em 6.4em;
     }
 
@@ -26,7 +30,7 @@
 
     #principal {
         padding: 10em 1.5em;
-        background-attachment: fixed; 
+        background-attachment: fixed;
     }
 
     #principal_conteudo {
@@ -36,21 +40,63 @@
     #principal_conteudo h1 {
         font-size: 5em;
     }
-    
+
     #principal_conteudo h2 {
         font-size: 3em;
     }
-    
+
     #principal_conteudo p {
         font-size: 2em;
     }
 
     #botao_agende {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
 
     #sessao_mapa {
         margin: 1em 20%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    #rodape_redes_icones {
+        flex-direction: row;
+    }
+
+    #sobre_imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #container_sobre_imagens {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #imagem1 img {
+        width: 80%;
+        margin: 0 1.5em;
+    }
+    
+    #imagem1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #imagem2 img {
+        width: 90%;
+        margin: 0 1.5em;
+    }
+
+    #imagem2 {
+        display: flex;
+        justify-content: center;
     }
 
 }

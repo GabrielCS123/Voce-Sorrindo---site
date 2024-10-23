@@ -1,0 +1,87 @@
+main {
+    text-align: justify;
+    padding: 2.25em 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#principal_conteudo {
+    color: black;
+    padding: 0;
+    text-align: center;
+    padding: 0 1.5em;
+}
+
+#principal_conteudo p {
+    margin: 0;
+    padding: 2em 0;
+}
+
+#textos_sobre {
+    padding: 0 1.5em 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#textos_sobre p {
+    font-weight: 500;
+}
+
+#container_sobre_imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#sobre_imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5em 2.25em 1.5em;
+    background-color: var(--amarelo2);
+}
+
+#sobre_imagens h2 {
+    padding: 1em 0;
+}
+
+#imagem1 img {
+    width: 90%;
+    margin: 0 1.5em;
+    border-radius: 1em;
+}
+
+#imagem1 {
+    display: flex;
+    justify-content: center;
+}
+
+#imagem2 img {
+    width: 90%;
+    margin: 0 1.5em;
+    border-radius: 1em;
+}
+
+#imagem2 {
+    display: flex;
+    justify-content: center;
+}
+
+#botao_agende {
+    margin: 0;
+}
+
+@media screen and (min-width: 760px) {
+    main {
+        padding: 3em 6.4em;
+        text-align: justify;
+    }
+
+    #principal_conteudo {
+        padding: 0;
+    }
+}

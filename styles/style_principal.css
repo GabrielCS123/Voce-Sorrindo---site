@@ -15,7 +15,7 @@
 body {
     margin: 0;
     padding: 0;
-      font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 /*CABECALHO*/
@@ -235,9 +235,7 @@ strong {
     background: linear-gradient(180deg, var(--amarelo1), #e8b8278f, #fff);
 }
 
-#sobre h2 {
-
-}
+#sobre h2 {}
 
 #sobre h3 {
     margin: .3em 0;
@@ -249,9 +247,7 @@ strong {
     font-weight: 500;
 }
 
-#sobre a {
-    
-}
+#sobre a {}
 
 /*DETALHES*/
 
@@ -263,8 +259,7 @@ strong {
     background-color: white;
 }
 
-#detalhe {
-}
+#detalhe {}
 
 #detalhe p {
     margin: 1em 0;
@@ -279,7 +274,7 @@ strong {
 
 #servicos {
     background-color: var(--amarelo1);
-    padding: 3em 1.5em; 
+    padding: 3em 1.5em;
 }
 
 #servicos h2 {
@@ -367,12 +362,14 @@ footer #logo {
     color: black;
 }
 
-#rodape_redes {
-
+#rodape_redes_icones {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
 }
 
 #rodape_redes h2 {
-    margin-bottom: .2em;
+    margin-bottom: .4em;
 }
 
 #rodape_redes img {
