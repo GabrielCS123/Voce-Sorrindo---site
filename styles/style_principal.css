@@ -245,6 +245,8 @@ strong {
 #sobre p {
     margin: 1.5em 0;
     font-weight: 500;
+    text-align: justify;
+    font-size: 1.2em;
 }
 
 #sobre a {}
@@ -259,11 +261,17 @@ strong {
     background-color: white;
 }
 
-#detalhe {}
+#detalhe {
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 8px;
+    padding: 1em;
+}
 
 #detalhe p {
     margin: 1em 0;
     font-weight: 500;
+    text-align: justify;
+
 }
 
 #detalhe h2 {
@@ -284,7 +292,7 @@ strong {
 #servicos_lista {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     padding-left: 1em;
 }
 
