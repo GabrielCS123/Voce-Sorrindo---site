@@ -12,7 +12,7 @@
     #servicos,
     #unidade,
     #sobre,
-    footer {
+    .footer_principal {
         padding: 3em 6.4em;
     }
 
@@ -49,6 +49,14 @@
         font-size: 2em;
     }
 
+    #sobre {
+        flex-direction: row;
+    }
+
+    #sobre img {
+        width: 50vh;
+    }
+
     #botao_agende {
         font-size: 1.5em;
     }
@@ -57,14 +65,17 @@
         margin: 1em 20%;
     }
 
-    footer {
-        flex-direction: row;
+    .footer_principal {
         justify-content: space-between;
         padding-bottom: 0;
     }
 
     #rodape_redes_icones {
         flex-direction: row;
+    }
+
+    .direitos {
+        flex-direction: row-reverse;
     }
 
     #sobre_imagens {

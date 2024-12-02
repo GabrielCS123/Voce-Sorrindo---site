@@ -233,6 +233,9 @@ strong {
 #sobre {
     padding: 3em 1.5em 6em 1.5em;
     background: linear-gradient(180deg, var(--amarelo1), #e8b8278f, #fff);
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
 }
 
 #sobre h2 {}
@@ -250,6 +253,14 @@ strong {
 }
 
 #sobre a {}
+
+.sobre_2 {
+    text-align: center;
+}
+
+.sobre_2 img {
+    width: 90%;
+}
 
 /*DETALHES*/
 
@@ -307,7 +318,7 @@ strong {
 
 #saiba_mais {
     display: inline-block;
-    background-color: #ffb700;
+    background-color: var(--vermelho);
     padding: 1em .8em;
     color: white;
     text-decoration: none;
@@ -316,21 +327,21 @@ strong {
 }
 
 #saiba_mais:hover {
-    background-color: #ffd24b;
+    background-color: #ff4e18;
     color: rgb(0, 0, 0);
     transition: all 0.2s ease;
 }
 
 /*RODAPE*/
 
-footer {
+.footer_principal {
     display: flex;
     flex-direction: column;
     background-color: var(--cinza);
     padding: 3em 1.5em 3em 1.5em;
 }
 
-footer #logo {
+.footer_principal #logo {
     padding-bottom: 2em;
 }
 
@@ -382,4 +393,18 @@ footer #logo {
 
 #rodape_redes img {
     width: 35px;
+}
+
+.direitos {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.2em;
+    flex-direction: column;
+}
+
+.direitos img {
+    width: 50px;
 }
