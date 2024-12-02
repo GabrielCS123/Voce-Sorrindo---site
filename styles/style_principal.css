@@ -234,19 +234,19 @@ strong {
     padding: 3em 1.5em 6em 1.5em;
     background: linear-gradient(180deg, var(--amarelo1), #e8b8278f, #fff);
     display: flex;
-    gap: 3em;
+    gap: 10em;
     flex-direction: column;
 }
 
 #sobre h2 {}
 
 #sobre h3 {
-    margin: .3em 0;
+    margin: .5em 0;
     font-size: 1.5em;
 }
 
 #sobre p {
-    margin: 1.5em 0;
+    margin: 2.5em 0;
     font-weight: 500;
     text-align: justify;
     font-size: 1.2em;

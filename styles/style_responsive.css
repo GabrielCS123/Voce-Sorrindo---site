@@ -16,6 +16,10 @@
         padding: 3em 6.4em;
     }
 
+    #detalhes {
+        flex-direction: row;
+    }
+
     #menu_maior {
         display: block;
     }
@@ -89,6 +93,10 @@
     #container_sobre_imagens {
         display: flex;
         flex-direction: row;
+    }
+
+    #textos_sobre {
+        padding: 0 5em 3em 5em;
     }
 
     #imagem1 img {
