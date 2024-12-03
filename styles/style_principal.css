@@ -234,7 +234,7 @@ strong {
     padding: 3em 1.5em 6em 1.5em;
     background: linear-gradient(180deg, var(--amarelo1), #e8b8278f, #fff);
     display: flex;
-    gap: 10em;
+    gap: 3em;
     flex-direction: column;
 }
 

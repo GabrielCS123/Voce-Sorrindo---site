@@ -1,4 +1,4 @@
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 720px) {
 
     header {
         padding: 1em 5em;
@@ -15,11 +15,7 @@
     .footer_principal {
         padding: 3em 6.4em;
     }
-
-    #detalhes {
-        flex-direction: row;
-    }
-
+    
     #menu_maior {
         display: block;
     }
@@ -55,6 +51,7 @@
 
     #sobre {
         flex-direction: row;
+        gap: 10em;
     }
 
     #sobre img {
@@ -119,4 +116,14 @@
         justify-content: center;
     }
 
+}
+
+@media (max-width: 1200px) and (min-width: 720px) {
+    #sobre {
+        gap: 0;
+    }
+
+    .sobre_2 img {
+        display: none;
+    }
 }
